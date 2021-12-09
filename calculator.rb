@@ -7,6 +7,7 @@ loop do
     puts "2 - Sub"
     puts "3 - Mult"
     puts "4 - Division"
+    puts "5 - Rest of division"
     puts "0 - exit"
 
     option = gets.chomp.to_i
@@ -36,6 +37,9 @@ loop do
     when 4
         operation = "division"
         result = num1 / num2
+    when 5
+        operation = "rest of division"
+        result = num1 % num2
     else
         message "invalid input!"
     end
